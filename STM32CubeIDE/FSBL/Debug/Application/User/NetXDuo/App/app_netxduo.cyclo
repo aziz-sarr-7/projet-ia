@@ -1,0 +1,10 @@
+C:/Nx_TCP_Echo_Client _Copie/FSBL/NetXDuo/App/app_netxduo.c:65:6:MX_NetXDuo_Init	18
+C:/Nx_TCP_Echo_Client _Copie/FSBL/NetXDuo/App/app_netxduo.c:187:13:ip_address_change_notify_callback	3
+C:/Nx_TCP_Echo_Client _Copie/FSBL/NetXDuo/App/app_netxduo.c:203:13:App_Ping_8_8_8_8	3
+C:/Nx_TCP_Echo_Client _Copie/FSBL/NetXDuo/App/app_netxduo.c:233:13:App_DNS_Client_Init	4
+C:/Nx_TCP_Echo_Client _Copie/FSBL/NetXDuo/App/app_netxduo.c:266:13:App_DNS_Resolve_And_Ping_Google	4
+C:/Nx_TCP_Echo_Client _Copie/FSBL/NetXDuo/App/app_netxduo.c:319:13:App_DNS_Resolve_ThingSpeak	2
+C:/Nx_TCP_Echo_Client _Copie/FSBL/NetXDuo/App/app_netxduo.c:349:13:App_Send_Data_To_ThingSpeak	12
+C:/Nx_TCP_Echo_Client _Copie/FSBL/NetXDuo/App/app_netxduo.c:497:13:nx_app_thread_entry	5
+C:/Nx_TCP_Echo_Client _Copie/FSBL/NetXDuo/App/app_netxduo.c:539:13:App_TCP_Thread_Entry	1
+C:/Nx_TCP_Echo_Client _Copie/FSBL/NetXDuo/App/app_netxduo.c:552:13:App_Link_Thread_Entry	7

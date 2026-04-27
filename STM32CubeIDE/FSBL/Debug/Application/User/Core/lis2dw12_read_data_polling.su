@@ -1,0 +1,5 @@
+../Application/User/Core/lis2dw12_read_data_polling.c:133:6:lis2dw12_read_data_polling	96	static
+../Application/User/Core/lis2dw12_read_data_polling.c:201:16:platform_write	40	static
+../Application/User/Core/lis2dw12_read_data_polling.c:209:16:platform_read	40	static
+../Application/User/Core/lis2dw12_read_data_polling.c:217:13:platform_delay	16	static
+../Application/User/Core/lis2dw12_read_data_polling.c:224:13:platform_init	4	static

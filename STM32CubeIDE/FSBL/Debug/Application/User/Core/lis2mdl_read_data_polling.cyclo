@@ -1,0 +1,5 @@
+../Application/User/Core/lis2mdl_read_data_polling.c:134:6:lis2mdl_read_data_simple	7
+../Application/User/Core/lis2mdl_read_data_polling.c:211:16:platform_write	1
+../Application/User/Core/lis2mdl_read_data_polling.c:219:16:platform_read	1
+../Application/User/Core/lis2mdl_read_data_polling.c:227:13:platform_delay	1
+../Application/User/Core/lis2mdl_read_data_polling.c:235:13:platform_init	1

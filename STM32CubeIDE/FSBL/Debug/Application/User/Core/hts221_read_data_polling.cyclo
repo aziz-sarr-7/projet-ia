@@ -1,0 +1,7 @@
+../Application/User/Core/hts221_read_data_polling.c:24:6:hts221_read_data_polling	6
+../Application/User/Core/hts221_read_data_polling.c:112:16:platform_write	2
+../Application/User/Core/hts221_read_data_polling.c:122:16:platform_read	2
+../Application/User/Core/hts221_read_data_polling.c:131:13:platform_delay	1
+../Application/User/Core/hts221_read_data_polling.c:136:13:platform_init	1
+../Application/User/Core/hts221_read_data_polling.c:141:7:hts221_get_temperature	1
+../Application/User/Core/hts221_read_data_polling.c:146:7:hts221_get_humidity	1

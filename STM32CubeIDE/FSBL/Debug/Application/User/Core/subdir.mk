@@ -1,0 +1,94 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+# Toolchain: GNU Tools for STM32 (14.3.rel1)
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+C:/Nx_TCP_Echo_Client\ _Copie/FSBL/Core/Src/app_threadx.c \
+../Application/User/Core/hts221_read_data_polling.c \
+../Application/User/Core/hts221_reg.c \
+../Application/User/Core/lis2dw12_read_data_polling.c \
+../Application/User/Core/lis2dw12_reg.c \
+../Application/User/Core/lis2mdl_read_data_polling.c \
+../Application/User/Core/lis2mdl_reg.c \
+../Application/User/Core/lps22hh_read_data_polling.c \
+../Application/User/Core/lps22hh_reg.c \
+../Application/User/Core/lsm6dso_read_data_polling.c \
+../Application/User/Core/lsm6dso_reg.c \
+C:/Nx_TCP_Echo_Client\ _Copie/FSBL/Core/Src/main.c \
+C:/Nx_TCP_Echo_Client\ _Copie/FSBL/Core/Src/stm32n6xx_hal_msp.c \
+C:/Nx_TCP_Echo_Client\ _Copie/FSBL/Core/Src/stm32n6xx_hal_timebase_tim.c \
+C:/Nx_TCP_Echo_Client\ _Copie/FSBL/Core/Src/stm32n6xx_it.c \
+../Application/User/Core/syscalls.c \
+../Application/User/Core/sysmem.c 
+
+S_UPPER_SRCS += \
+C:/Nx_TCP_Echo_Client\ _Copie/FSBL/Core/Src/tx_initialize_low_level.S 
+
+OBJS += \
+./Application/User/Core/app_threadx.o \
+./Application/User/Core/hts221_read_data_polling.o \
+./Application/User/Core/hts221_reg.o \
+./Application/User/Core/lis2dw12_read_data_polling.o \
+./Application/User/Core/lis2dw12_reg.o \
+./Application/User/Core/lis2mdl_read_data_polling.o \
+./Application/User/Core/lis2mdl_reg.o \
+./Application/User/Core/lps22hh_read_data_polling.o \
+./Application/User/Core/lps22hh_reg.o \
+./Application/User/Core/lsm6dso_read_data_polling.o \
+./Application/User/Core/lsm6dso_reg.o \
+./Application/User/Core/main.o \
+./Application/User/Core/stm32n6xx_hal_msp.o \
+./Application/User/Core/stm32n6xx_hal_timebase_tim.o \
+./Application/User/Core/stm32n6xx_it.o \
+./Application/User/Core/syscalls.o \
+./Application/User/Core/sysmem.o \
+./Application/User/Core/tx_initialize_low_level.o 
+
+S_UPPER_DEPS += \
+./Application/User/Core/tx_initialize_low_level.d 
+
+C_DEPS += \
+./Application/User/Core/app_threadx.d \
+./Application/User/Core/hts221_read_data_polling.d \
+./Application/User/Core/hts221_reg.d \
+./Application/User/Core/lis2dw12_read_data_polling.d \
+./Application/User/Core/lis2dw12_reg.d \
+./Application/User/Core/lis2mdl_read_data_polling.d \
+./Application/User/Core/lis2mdl_reg.d \
+./Application/User/Core/lps22hh_read_data_polling.d \
+./Application/User/Core/lps22hh_reg.d \
+./Application/User/Core/lsm6dso_read_data_polling.d \
+./Application/User/Core/lsm6dso_reg.d \
+./Application/User/Core/main.d \
+./Application/User/Core/stm32n6xx_hal_msp.d \
+./Application/User/Core/stm32n6xx_hal_timebase_tim.d \
+./Application/User/Core/stm32n6xx_it.d \
+./Application/User/Core/syscalls.d \
+./Application/User/Core/sysmem.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+Application/User/Core/app_threadx.o: C:/Nx_TCP_Echo_Client\ _Copie/FSBL/Core/Src/app_threadx.c Application/User/Core/subdir.mk
+	arm-none-eabi-gcc "$<" -mcpu=cortex-m55 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32N657xx -DNX_INCLUDE_USER_DEFINE_FILE -DTX_INCLUDE_USER_DEFINE_FILE -DTX_SINGLE_MODE_SECURE=1 -c -I../../../FSBL/NetXDuo/App -I"C:/Nx_TCP_Echo_Client _Copie/STM32CubeIDE/FSBL/Middlewares/netxduo/Addons DNS CLIENT" -I"C:/Nx_TCP_Echo_Client _Copie/STM32CubeIDE/FSBL/Drivers/BSP/Components/lan8742" -I../../../FSBL/NetXDuo/Target -I../../../FSBL/Core/Inc -I../../../FSBL/AZURE_RTOS/App -I../../../Drivers/STM32N6xx_HAL_Driver/Inc -I../../../Drivers/CMSIS/Device/ST/STM32N6xx/Include -I../../../Drivers/STM32N6xx_HAL_Driver/Inc/Legacy -I../../../Drivers/BSP/Components/lan8742 -I../../../Middlewares/ST/netxduo/addons/dhcp -I../../../Middlewares/ST/netxduo/tsn/inc -I../../../Middlewares/ST/netxduo/common/drivers/ethernet -I../../../Middlewares/ST/threadx/common/inc -I../../../Middlewares/ST/netxduo/common/inc -I../../../Middlewares/ST/netxduo/ports/cortex_m55/gnu/inc -I../../../Middlewares/ST/threadx/ports/cortex_m55/gnu/inc -I../../../Drivers/CMSIS/Include -I"C:/Nx_TCP_Echo_Client _Copie/FSBL/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -mcmse -MMD -MP -MF"Application/User/Core/app_threadx.d" -MT"$@" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "$@"
+Application/User/Core/%.o Application/User/Core/%.su Application/User/Core/%.cyclo: ../Application/User/Core/%.c Application/User/Core/subdir.mk
+	arm-none-eabi-gcc "$<" -mcpu=cortex-m55 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32N657xx -DNX_INCLUDE_USER_DEFINE_FILE -DTX_INCLUDE_USER_DEFINE_FILE -DTX_SINGLE_MODE_SECURE=1 -c -I../../../FSBL/NetXDuo/App -I"C:/Nx_TCP_Echo_Client _Copie/STM32CubeIDE/FSBL/Middlewares/netxduo/Addons DNS CLIENT" -I"C:/Nx_TCP_Echo_Client _Copie/STM32CubeIDE/FSBL/Drivers/BSP/Components/lan8742" -I../../../FSBL/NetXDuo/Target -I../../../FSBL/Core/Inc -I../../../FSBL/AZURE_RTOS/App -I../../../Drivers/STM32N6xx_HAL_Driver/Inc -I../../../Drivers/CMSIS/Device/ST/STM32N6xx/Include -I../../../Drivers/STM32N6xx_HAL_Driver/Inc/Legacy -I../../../Drivers/BSP/Components/lan8742 -I../../../Middlewares/ST/netxduo/addons/dhcp -I../../../Middlewares/ST/netxduo/tsn/inc -I../../../Middlewares/ST/netxduo/common/drivers/ethernet -I../../../Middlewares/ST/threadx/common/inc -I../../../Middlewares/ST/netxduo/common/inc -I../../../Middlewares/ST/netxduo/ports/cortex_m55/gnu/inc -I../../../Middlewares/ST/threadx/ports/cortex_m55/gnu/inc -I../../../Drivers/CMSIS/Include -I"C:/Nx_TCP_Echo_Client _Copie/FSBL/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -mcmse -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "$@"
+Application/User/Core/main.o: C:/Nx_TCP_Echo_Client\ _Copie/FSBL/Core/Src/main.c Application/User/Core/subdir.mk
+	arm-none-eabi-gcc "$<" -mcpu=cortex-m55 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32N657xx -DNX_INCLUDE_USER_DEFINE_FILE -DTX_INCLUDE_USER_DEFINE_FILE -DTX_SINGLE_MODE_SECURE=1 -c -I../../../FSBL/NetXDuo/App -I"C:/Nx_TCP_Echo_Client _Copie/STM32CubeIDE/FSBL/Middlewares/netxduo/Addons DNS CLIENT" -I"C:/Nx_TCP_Echo_Client _Copie/STM32CubeIDE/FSBL/Drivers/BSP/Components/lan8742" -I../../../FSBL/NetXDuo/Target -I../../../FSBL/Core/Inc -I../../../FSBL/AZURE_RTOS/App -I../../../Drivers/STM32N6xx_HAL_Driver/Inc -I../../../Drivers/CMSIS/Device/ST/STM32N6xx/Include -I../../../Drivers/STM32N6xx_HAL_Driver/Inc/Legacy -I../../../Drivers/BSP/Components/lan8742 -I../../../Middlewares/ST/netxduo/addons/dhcp -I../../../Middlewares/ST/netxduo/tsn/inc -I../../../Middlewares/ST/netxduo/common/drivers/ethernet -I../../../Middlewares/ST/threadx/common/inc -I../../../Middlewares/ST/netxduo/common/inc -I../../../Middlewares/ST/netxduo/ports/cortex_m55/gnu/inc -I../../../Middlewares/ST/threadx/ports/cortex_m55/gnu/inc -I../../../Drivers/CMSIS/Include -I"C:/Nx_TCP_Echo_Client _Copie/FSBL/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -mcmse -MMD -MP -MF"Application/User/Core/main.d" -MT"$@" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "$@"
+Application/User/Core/stm32n6xx_hal_msp.o: C:/Nx_TCP_Echo_Client\ _Copie/FSBL/Core/Src/stm32n6xx_hal_msp.c Application/User/Core/subdir.mk
+	arm-none-eabi-gcc "$<" -mcpu=cortex-m55 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32N657xx -DNX_INCLUDE_USER_DEFINE_FILE -DTX_INCLUDE_USER_DEFINE_FILE -DTX_SINGLE_MODE_SECURE=1 -c -I../../../FSBL/NetXDuo/App -I"C:/Nx_TCP_Echo_Client _Copie/STM32CubeIDE/FSBL/Middlewares/netxduo/Addons DNS CLIENT" -I"C:/Nx_TCP_Echo_Client _Copie/STM32CubeIDE/FSBL/Drivers/BSP/Components/lan8742" -I../../../FSBL/NetXDuo/Target -I../../../FSBL/Core/Inc -I../../../FSBL/AZURE_RTOS/App -I../../../Drivers/STM32N6xx_HAL_Driver/Inc -I../../../Drivers/CMSIS/Device/ST/STM32N6xx/Include -I../../../Drivers/STM32N6xx_HAL_Driver/Inc/Legacy -I../../../Drivers/BSP/Components/lan8742 -I../../../Middlewares/ST/netxduo/addons/dhcp -I../../../Middlewares/ST/netxduo/tsn/inc -I../../../Middlewares/ST/netxduo/common/drivers/ethernet -I../../../Middlewares/ST/threadx/common/inc -I../../../Middlewares/ST/netxduo/common/inc -I../../../Middlewares/ST/netxduo/ports/cortex_m55/gnu/inc -I../../../Middlewares/ST/threadx/ports/cortex_m55/gnu/inc -I../../../Drivers/CMSIS/Include -I"C:/Nx_TCP_Echo_Client _Copie/FSBL/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -mcmse -MMD -MP -MF"Application/User/Core/stm32n6xx_hal_msp.d" -MT"$@" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "$@"
+Application/User/Core/stm32n6xx_hal_timebase_tim.o: C:/Nx_TCP_Echo_Client\ _Copie/FSBL/Core/Src/stm32n6xx_hal_timebase_tim.c Application/User/Core/subdir.mk
+	arm-none-eabi-gcc "$<" -mcpu=cortex-m55 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32N657xx -DNX_INCLUDE_USER_DEFINE_FILE -DTX_INCLUDE_USER_DEFINE_FILE -DTX_SINGLE_MODE_SECURE=1 -c -I../../../FSBL/NetXDuo/App -I"C:/Nx_TCP_Echo_Client _Copie/STM32CubeIDE/FSBL/Middlewares/netxduo/Addons DNS CLIENT" -I"C:/Nx_TCP_Echo_Client _Copie/STM32CubeIDE/FSBL/Drivers/BSP/Components/lan8742" -I../../../FSBL/NetXDuo/Target -I../../../FSBL/Core/Inc -I../../../FSBL/AZURE_RTOS/App -I../../../Drivers/STM32N6xx_HAL_Driver/Inc -I../../../Drivers/CMSIS/Device/ST/STM32N6xx/Include -I../../../Drivers/STM32N6xx_HAL_Driver/Inc/Legacy -I../../../Drivers/BSP/Components/lan8742 -I../../../Middlewares/ST/netxduo/addons/dhcp -I../../../Middlewares/ST/netxduo/tsn/inc -I../../../Middlewares/ST/netxduo/common/drivers/ethernet -I../../../Middlewares/ST/threadx/common/inc -I../../../Middlewares/ST/netxduo/common/inc -I../../../Middlewares/ST/netxduo/ports/cortex_m55/gnu/inc -I../../../Middlewares/ST/threadx/ports/cortex_m55/gnu/inc -I../../../Drivers/CMSIS/Include -I"C:/Nx_TCP_Echo_Client _Copie/FSBL/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -mcmse -MMD -MP -MF"Application/User/Core/stm32n6xx_hal_timebase_tim.d" -MT"$@" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "$@"
+Application/User/Core/stm32n6xx_it.o: C:/Nx_TCP_Echo_Client\ _Copie/FSBL/Core/Src/stm32n6xx_it.c Application/User/Core/subdir.mk
+	arm-none-eabi-gcc "$<" -mcpu=cortex-m55 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32N657xx -DNX_INCLUDE_USER_DEFINE_FILE -DTX_INCLUDE_USER_DEFINE_FILE -DTX_SINGLE_MODE_SECURE=1 -c -I../../../FSBL/NetXDuo/App -I"C:/Nx_TCP_Echo_Client _Copie/STM32CubeIDE/FSBL/Middlewares/netxduo/Addons DNS CLIENT" -I"C:/Nx_TCP_Echo_Client _Copie/STM32CubeIDE/FSBL/Drivers/BSP/Components/lan8742" -I../../../FSBL/NetXDuo/Target -I../../../FSBL/Core/Inc -I../../../FSBL/AZURE_RTOS/App -I../../../Drivers/STM32N6xx_HAL_Driver/Inc -I../../../Drivers/CMSIS/Device/ST/STM32N6xx/Include -I../../../Drivers/STM32N6xx_HAL_Driver/Inc/Legacy -I../../../Drivers/BSP/Components/lan8742 -I../../../Middlewares/ST/netxduo/addons/dhcp -I../../../Middlewares/ST/netxduo/tsn/inc -I../../../Middlewares/ST/netxduo/common/drivers/ethernet -I../../../Middlewares/ST/threadx/common/inc -I../../../Middlewares/ST/netxduo/common/inc -I../../../Middlewares/ST/netxduo/ports/cortex_m55/gnu/inc -I../../../Middlewares/ST/threadx/ports/cortex_m55/gnu/inc -I../../../Drivers/CMSIS/Include -I"C:/Nx_TCP_Echo_Client _Copie/FSBL/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -mcmse -MMD -MP -MF"Application/User/Core/stm32n6xx_it.d" -MT"$@" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "$@"
+Application/User/Core/tx_initialize_low_level.o: C:/Nx_TCP_Echo_Client\ _Copie/FSBL/Core/Src/tx_initialize_low_level.S Application/User/Core/subdir.mk
+	arm-none-eabi-gcc -mcpu=cortex-m55 -g3 -DDEBUG -DTX_INCLUDE_USER_DEFINE_FILE -DTX_SINGLE_MODE_SECURE=1 -c -I../../../FSBL/NetXDuo/App -I../../../FSBL/NetXDuo/Target -I../../../FSBL/Core/Inc -I../../../FSBL/AZURE_RTOS/App -I../../../Drivers/STM32N6xx_HAL_Driver/Inc -I../../../Drivers/CMSIS/Device/ST/STM32N6xx/Include -I../../../Drivers/STM32N6xx_HAL_Driver/Inc/Legacy -I../../../Drivers/BSP/Components/lan8742 -I../../../Middlewares/ST/netxduo/addons/dhcp -I../../../Middlewares/ST/netxduo/common/drivers/ethernet -I../../../Middlewares/ST/threadx/common/inc -I../../../Middlewares/ST/netxduo/common/inc -I../../../Middlewares/ST/netxduo/ports/cortex_m55/gnu/inc -I../../../Middlewares/ST/threadx/ports/cortex_m55/gnu/inc -I../../../Drivers/CMSIS/Include -x assembler-with-cpp -MMD -MP -MF"Application/User/Core/tx_initialize_low_level.d" -MT"$@" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "$@" "$<"
+
+clean: clean-Application-2f-User-2f-Core
+
+clean-Application-2f-User-2f-Core:
+	-$(RM) ./Application/User/Core/app_threadx.cyclo ./Application/User/Core/app_threadx.d ./Application/User/Core/app_threadx.o ./Application/User/Core/app_threadx.su ./Application/User/Core/hts221_read_data_polling.cyclo ./Application/User/Core/hts221_read_data_polling.d ./Application/User/Core/hts221_read_data_polling.o ./Application/User/Core/hts221_read_data_polling.su ./Application/User/Core/hts221_reg.cyclo ./Application/User/Core/hts221_reg.d ./Application/User/Core/hts221_reg.o ./Application/User/Core/hts221_reg.su ./Application/User/Core/lis2dw12_read_data_polling.cyclo ./Application/User/Core/lis2dw12_read_data_polling.d ./Application/User/Core/lis2dw12_read_data_polling.o ./Application/User/Core/lis2dw12_read_data_polling.su ./Application/User/Core/lis2dw12_reg.cyclo ./Application/User/Core/lis2dw12_reg.d ./Application/User/Core/lis2dw12_reg.o ./Application/User/Core/lis2dw12_reg.su ./Application/User/Core/lis2mdl_read_data_polling.cyclo ./Application/User/Core/lis2mdl_read_data_polling.d ./Application/User/Core/lis2mdl_read_data_polling.o ./Application/User/Core/lis2mdl_read_data_polling.su ./Application/User/Core/lis2mdl_reg.cyclo ./Application/User/Core/lis2mdl_reg.d ./Application/User/Core/lis2mdl_reg.o ./Application/User/Core/lis2mdl_reg.su ./Application/User/Core/lps22hh_read_data_polling.cyclo ./Application/User/Core/lps22hh_read_data_polling.d ./Application/User/Core/lps22hh_read_data_polling.o ./Application/User/Core/lps22hh_read_data_polling.su ./Application/User/Core/lps22hh_reg.cyclo ./Application/User/Core/lps22hh_reg.d ./Application/User/Core/lps22hh_reg.o ./Application/User/Core/lps22hh_reg.su ./Application/User/Core/lsm6dso_read_data_polling.cyclo ./Application/User/Core/lsm6dso_read_data_polling.d ./Application/User/Core/lsm6dso_read_data_polling.o ./Application/User/Core/lsm6dso_read_data_polling.su ./Application/User/Core/lsm6dso_reg.cyclo ./Application/User/Core/lsm6dso_reg.d ./Application/User/Core/lsm6dso_reg.o ./Application/User/Core/lsm6dso_reg.su ./Application/User/Core/main.cyclo ./Application/User/Core/main.d ./Application/User/Core/main.o ./Application/User/Core/main.su ./Application/User/Core/stm32n6xx_hal_msp.cyclo ./Application/User/Core/stm32n6xx_hal_msp.d ./Application/User/Core/stm32n6xx_hal_msp.o ./Application/User/Core/stm32n6xx_hal_msp.su ./Application/User/Core/stm32n6xx_hal_timebase_tim.cyclo ./Application/User/Core/stm32n6xx_hal_timebase_tim.d ./Application/User/Core/stm32n6xx_hal_timebase_tim.o ./Application/User/Core/stm32n6xx_hal_timebase_tim.su ./Application/User/Core/stm32n6xx_it.cyclo ./Application/User/Core/stm32n6xx_it.d ./Application/User/Core/stm32n6xx_it.o ./Application/User/Core/stm32n6xx_it.su ./Application/User/Core/syscalls.cyclo ./Application/User/Core/syscalls.d ./Application/User/Core/syscalls.o ./Application/User/Core/syscalls.su ./Application/User/Core/sysmem.cyclo ./Application/User/Core/sysmem.d ./Application/User/Core/sysmem.o ./Application/User/Core/sysmem.su ./Application/User/Core/tx_initialize_low_level.d ./Application/User/Core/tx_initialize_low_level.o
+
+.PHONY: clean-Application-2f-User-2f-Core
+

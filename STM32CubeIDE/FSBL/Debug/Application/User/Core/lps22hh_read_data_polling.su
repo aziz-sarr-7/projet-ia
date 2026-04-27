@@ -1,0 +1,6 @@
+../Application/User/Core/lps22hh_read_data_polling.c:25:6:lps22hh_read_data_polling	88	static
+../Application/User/Core/lps22hh_read_data_polling.c:88:16:platform_write	40	static
+../Application/User/Core/lps22hh_read_data_polling.c:99:16:platform_read	40	static
+../Application/User/Core/lps22hh_read_data_polling.c:110:13:platform_delay	16	static
+../Application/User/Core/lps22hh_read_data_polling.c:116:13:platform_init	4	static
+../Application/User/Core/lps22hh_read_data_polling.c:121:7:lps22hh_get_pressure	4	static
